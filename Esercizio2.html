@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="primoriquadro" onmouseover="mOver(this)" onmouseout="mOut(this)"
+        style="background-color:white;width: 200px;height: 30px;padding: 50px;">Ciao</div>
+    <div id="secondoriquadro" onmouseover="mover(this)" onmouseout="mout(this)"
+        style="background-color:black;width: 200px;height: 30px;padding: 50px;">Ciao</div>
+    <script>
+        function mOver() {
+            document.getElementById("primoriquadro").style = "background-color:green;width: 200px;height: 30px;padding: 50px;";
+        }
+        function mOut() {
+            document.getElementById("primoriquadro").style = "background-color:white;width: 200px;height: 30px;padding: 50px;";
+        }
+    </script>
+    <script>
+        function mover() {
+            document.getElementById("secondoriquadro").style = "background-color:red;width: 200px;height: 30px;padding: 50px;";
+        }
+        function mout() {
+            document.getElementById("secondoriquadro").style = "background-color:black;width: 200px;height: 30px;padding: 50px;";
+        }
+    </script>
+</body>
+
+</html>

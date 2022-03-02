@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h2>Radio Buttons</h2>
+
+    <p class="class-test">Choose your favorite Web language:</p>
+
+    <form id="form-id" name="form-name">
+        <input type="radio" id="html" name="fav_language" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="radio" id="css" name="fav_language" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+        <label for="javascript">JavaScript</label>
+    </form>
+    <p id="paragraph-test">Povero gabbiano!</p>
+    <script>
+        document.getElementsByName("p");
+    </script>
+    <script>
+        document.write("Hello");
+    </script><br>
+    <form><input type="text" id="valore"></form>
+    <button onclick="validateForm()">Bottone</button>
+    <script type="text/javascript">
+        function validateForm() {
+            var numero = document.getElementById("valore").value;
+            console.log(numero);
+            if (numero >= 1 && numero <= 100) {
+                document.getElementById("paragraph-test").innerHTML = ("<p style='color:blue'> Input valido</p>");
+            }
+            else {
+                document.getElementById("paragraph-test").innerHTML = ("<p style='color:red'> Input non valido</p>");
+            }
+        }
+    </script>
+</body>
+
+</html>
