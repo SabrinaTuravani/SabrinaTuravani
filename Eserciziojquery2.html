@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+
+    </script>
+    <style>
+        .submenu {
+            display: none;
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            $("li").click(function () {
+                $(".submenu").slideUp();
+                $(".submenu", this).slideDown();
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <ul id="menu">
+        <li class="firstlevel">
+            Azienda
+            <ul class="submenu">
+                <li>
+                    chi siamo
+                </li>
+                <li>
+                    dove siamo
+                </li>
+                <li>
+                    faq
+                </li>
+            </ul>
+        </li>
+        <li class="firstlevel">
+            Prodotti
+            <ul class="submenu">
+                <li>
+                    catalogo
+                </li>
+                <li>
+                    speciali
+                </li>
+                <li>
+                    extra
+                </li>
+            </ul>
+        </li>
+        <li class="firstlevel">
+            Contatti
+            <ul class="submenu">
+                <li>
+                    email
+                </li>
+                <li>
+                    telefono
+                </li>
+                <li>
+                    indirizzo
+                </li>
+            </ul>
+        </li>
+    </ul>
+</body>
+
+</html>
